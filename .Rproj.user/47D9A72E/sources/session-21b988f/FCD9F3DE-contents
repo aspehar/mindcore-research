@@ -1,0 +1,53 @@
+#creating SID variable for bbprime data 
+library(tidyverse)
+setwd("~/Desktop/Ardens-Project/mindcore-research")
+df1 <-  read_csv("Analyses-Data/messages_bbprime_followup.csv")
+
+df2 <- df1 %>%
+  mutate(SID = gsub("^.*_(\\w{4})$", "\\1", pID)) %>% 
+  select(,c(12,1:11))
+  
+
+# View the updated dataframe
+head(df1)
+
+write_csv(df1, "~/Desktop/Ardens-Project/mindcore-research/Analyses-Data/messages_cleaned.csv")
+
+# Remove all objects from the workspace
+rm(list = ls())
+
+# Verify that the environment is cleaned
+ls()
+
+
+##Load in liwc data and joing 
+LIWC1 <- read_csv("Analyses-Data/bbprime-comments-1-LIWC.csv")
+
+LIWC2 <- read_csv("Analyses-Data/bbprime-comments-2-LIWC.csv")
+
+#see what column names are mismatched
+diff_columns <- setdiff(colnames(LIWC1), colnames(LIWC2))
+print(diff_columns)
+
+## match them up 
+LIWC2 <- rename(LIWC2, cond = survey_condition, content = topic)
+
+
+LIWC <- rbind(LIWC1,LIWC2)
+
+#save LIWC csv to wd 
+write_csv(LIWC, "~/Desktop/Ardens-Project/mindcore-research/Analyses-Data/LIWC_all_vars.csv")
+
+
+#merge all the dataframes 
+
+df1 <- read_csv("~/Desktop/Ardens-Project/mindcore-research/Analyses-Data/messesages_cleaned.csv")
+LIWC <- read_csv("~/Desktop/Ardens-Project/mindcore-research/Analyses-Data/LIWC_all_vars.csv")
+
+df1 <- rename(df1,  article_number = msg_number)
+
+merged <- inner_join(df1, LIWC, by = c("SID","article_number")) %>%
+  filter(!is.na(WC))
+
+write_csv(merged, "~/Desktop/Ardens-Project/mindcore-research/Analyses-Data/maybe-merged-correct.csv")
+          
