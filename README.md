@@ -1,37 +1,27 @@
-<<<<<<< HEAD
-# mindcore-research (Replace with the name... when we get there)
+# Summer Mindcore Research Project
 
-**This is my repo for my mindcore summer '23 project.**
+**This is my (Arden's) repo for my mindcore summer '23 project.**
+
+This is where you can say more about your project :) 
 
 ## File/folder breakdown 
 
 ### LIWC Data 
 
-- Folder with .csvs from LIWC-22 analyses (all variables)
+- Folder with .csvs from LIWC-22 analyses (100+ variables)
 
 ### Analyses-Data
 
-- Data I used for my XXXX models
+- Data I used for my XXXX models. 
+- XXX.csv contains XXXX
+- XXX.csv contains XXXX
 
 ### Analyses-Scripts 
 
 - Scripts I used for my analyses :P 
-=======
-# mindcore-research
 
-**This is my repo for my mindcore summer '23 project
+### GPT-Stuff 
 
-## File/folder breakdown
-
-### LIWC-Data
-
-- folder with .csvs from LIWC-22 analyses (all variables)
-
-
-### Analyses-Data
-
-- Data I used for my X models
-
-### Analyses-Scripts 
-- Scripts I used for my analysis 
->>>>>>> 868bfe6ee865a9b56e615136b07ca124135bdf7a
+- contains code to run the few-shot classifier I built to for calculating tone and arousal in my data named `GPT-Pipeline-Final.ipynb`. 
+- XXXX.csv contain the tone examples I used
+- XXXX.csv contain the arousal examples I used
