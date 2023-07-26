@@ -17,8 +17,11 @@ This is where you can say more about your project :)
 
 - Scripts I used for my analyses :P 
 
-### GPT-Stuff 
+### classifier-info
 
 - contains code to run the few-shot classifier I built to for calculating tone and arousal in my data named `GPT-Pipeline-Final.ipynb`. 
 - tone-rating-ex.csv contain the tone examples I used
 - arousal-examples2.csv contain the arousal examples I used
+
+##gpt-and-raters
+- raters-task.csv contains the task given to human raters & GPT to get the correlation between tone and arousal
