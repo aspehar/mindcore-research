@@ -6,9 +6,6 @@ This is where you can say more about your project :)
 
 ## File/folder breakdown 
 
-### LIWC Data 
-
-- Folder with .csvs from LIWC-22 analyses (100+ variables)
 
 ### Analyses-Data
 
@@ -23,5 +20,5 @@ This is where you can say more about your project :)
 ### GPT-Stuff 
 
 - contains code to run the few-shot classifier I built to for calculating tone and arousal in my data named `GPT-Pipeline-Final.ipynb`. 
-- XXXX.csv contain the tone examples I used
-- XXXX.csv contain the arousal examples I used
+- tone-rating-ex.csv contain the tone examples I used
+- arousal-examples2.csv contain the arousal examples I used
