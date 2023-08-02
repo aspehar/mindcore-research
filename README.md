@@ -1,6 +1,6 @@
 # Linguistic Arousal, Emotional Tone, and Sharing Behaviors
 
-**This is my (Arden's) repo for the mindcore summer '23 project:** *Linguistic Arousal, Emotional Tone, and Sharing Behaviors***.** Here is a link to my entire [preregistration](https://osf.io/registries/my-registrations?tab=submitted&view_only=)
+**This is my repo for the mindcore summer '23 project:** *Linguistic Arousal, Emotional Tone, and Sharing Behaviors***.** Here is a link to my entire [preregistration](https://osf.io/registries/my-registrations?tab=submitted&view_only=)
 
 My project explores the following research hypotheses:
 
