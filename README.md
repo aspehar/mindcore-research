@@ -20,7 +20,7 @@ My project explores the following research hypotheses:
 
 ### Data
 
-> contains all the datasets necessary to complete the analyses. We segmented the articles we fed t0 GPT into 5 different pieces
+> contains all the datasets necessary to complete the analyses. We segmented the articles we fed to GPT into 5 different pieces
 
 ### Examples
 
